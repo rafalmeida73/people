@@ -3,6 +3,7 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
  container: {
   padding: 15,
+  marginBottom: 15
  },
 
  avatar: {
@@ -34,10 +35,10 @@ const styles = StyleSheet.create({
  cell: {
   fontSize: 18,
   paddingLeft: 5,
- 
+
  },
 
- label:{
+ label: {
   fontWeight: 'bold',
  }
 

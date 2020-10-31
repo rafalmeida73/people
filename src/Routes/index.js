@@ -36,7 +36,7 @@ function Routes() {
      component={PeopleDetail}
      options={({ route }) => {
       return {
-        headerTitle: `${route.params.people.name.first} ${route.params.people.name.last}`,
+        headerTitle: `${route.params.item.name.first} ${route.params.item.name.last}`,
         headerTitleStyle: {
          fontSize: 30
         },

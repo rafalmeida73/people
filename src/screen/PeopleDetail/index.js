@@ -1,22 +1,22 @@
 import React from 'react';
-import { View, Image } from 'react-native';
+import { ScrollView, View, Image } from 'react-native';
 import styles from './styles';
 
 import Line from '../../components/Line'
 
 const PeopleDetail = (props) => {
-  const { people } = props.route.params;
+  const { item } = props.route.params;
   return (
-    <View style={styles.container}>
-      <Image style={styles.avatar} source={{ uri: people.picture.large }} />
+    <ScrollView style={styles.container}>
+      <Image style={styles.avatar} source={{ uri: item.picture.large }} />
       <View style={styles.detailContainer}>
-        <Line label="Email" content={people.email} />
-        <Line label="Cidade" content={`${people.location.city}, ${people.location.state}`} />
-        <Line label="Tel" content={people.phone} />
-        <Line label="Cel" content={people.cell} />
-        <Line label="Nacionalidade" content={people.nat} />
+        <Line label="Email" content={item.email} />
+        <Line label="Cidade" content={`${item.location.city}, ${item.location.state}`} />
+        <Line label="Tel" content={item.phone} />
+        <Line label="Cel" content={item.cell} />
+        <Line label="Nacionalidade" content={item.nat} />
       </View>
-    </View>
+    </ScrollView>
   );
 }
 
