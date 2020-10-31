@@ -3,7 +3,6 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
  container: {
   padding: 15,
-  marginBottom: 15
  },
 
  avatar: {
@@ -22,6 +21,7 @@ const styles = StyleSheet.create({
   shadowRadius: 9.11,
 
   elevation: 14,
+  marginBottom: 30
  },
 
  line: {
