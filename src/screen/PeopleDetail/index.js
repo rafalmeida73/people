@@ -14,7 +14,7 @@ const PeopleDetail = (props) => {
         <Line label="Cidade" content={`${item.location.city}, ${item.location.state}`} />
         <Line label="Tel" content={item.phone} />
         <Line label="Cel" content={item.cell} />
-        <Line label="Nacionalidade" content={item.nat} />
+        <Line label="Nat:" content={item.nat} />
       </View>
     </ScrollView>
   );
