@@ -8,5 +8,5 @@ The app generates random people with your information such as your email, phone,
 ## Installation
 
 ```sh
-npm install ou yarn install
+npm install or yarn install
 ```
